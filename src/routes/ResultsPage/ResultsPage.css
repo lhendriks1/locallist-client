@@ -1,0 +1,64 @@
+/* ---------------------------------------------------
+Ads Page STYLE
+----------------------------------------------------- */
+
+.SearchForm-wrapper {
+    background-color: blue;
+}
+.ResultsPage-row {
+    display: flex;
+    height: 100vh;
+    padding: 10px;
+}
+
+.ResultFilters-col {
+    min-width: 250px;
+    border-right: 1px solid #ddd;
+}
+
+.CheckboxContainer-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+legend {
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 2px 2px -2px #ddd;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    padding-bottom: 5px;
+    margin: 10px;
+    width: 80%;
+}
+
+input[type="checkbox"] {
+    margin: 10px;
+}
+
+
+.ResultGrid-col {
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1rem;
+    margin-left: 10px;
+}
+
+.ResultGrid-col li {
+    background: #eee;
+    padding: 1.3rem;
+    border-radius: 6px;
+    text-align: left;
+    list-style: none;
+  }
+
+
+@media screen and (min-width: 840px) {
+    .ResultsPage-row {
+        padding: 40px 60px;
+    }
+
+    .ResultGrid-col {
+        margin-left: 40px;
+    }
+}

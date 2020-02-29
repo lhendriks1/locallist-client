@@ -1,14 +1,9 @@
-import React from 'react';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import React from "react";
 
-export default function Success (props) {
-
-    return (
-        <MuiThemeProvider>
-            <>
-            <h1>Your Ad has been posted: link</h1>
-            </>
-        </MuiThemeProvider>
-    )
+export default function Success(props) {
+  return (
+    <>
+      <h1>Your Ad has been posted: link</h1>
+    </>
+  );
 }
-

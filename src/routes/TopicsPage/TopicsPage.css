@@ -77,7 +77,7 @@ ul.topics-list > li {
 }
 
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 840px) {
     .hero > div, .TopicsContent {
       width: 80%;
       margin-right: auto;
