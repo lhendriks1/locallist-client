@@ -1,3 +1,10 @@
+/* ---------------------------------------------------
+Mobile STYLE
+----------------------------------------------------- */
+  form * {
+    font-size: 16px;
+  }
+
   .nav-search {
     width: 100vw;
     background-color: #eee;
@@ -5,14 +12,14 @@
     padding: 20px;
   } 
   
-  .search > input {
+  .search input {
     display: block;
     width: 100%;
     background-color: white;
     border: 1px solid #eee;
     padding: 5px 10px;
     margin-bottom: 10px;
-    font-size: 18px;
+    margin-top: 10px;
   }
   
   .search_categories {
@@ -32,45 +39,59 @@
     border-radius: 0;
     line-height: 1;
     padding: 5px 10px;
-    font-size: 16px;
   }
   
   button.search-button {
     background-color: white;
-    border: 1px solid black;
+    border: none;
     border-radius: 4px;
-    font-size: inherit;
+    padding: 5px 20px;
+    box-shadow: 0 8px 6px -6px black;
   }
+
+/* ---------------------------------------------------
+Tablet Screens STYLE
+----------------------------------------------------- */
   
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 840px) {
+
     form.nav-search {
         position: relative;
         bottom: -42px;
         z-index: 10;
         display: flex;
         padding: 0;
+        background-color: transparent;
+        border: none;
     }
 
+    .search_categories {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      background-color: white;
+      box-shadow: 0 8px 6px -6px black
+
+    }
+    
     .search_categories .select select {
         width: 150%;
-        padding: 0px 8px 0px 14px;
-        background: transparent;
+        position: static;
+        background: white;
+        padding: 10px;
     }
 
     .search {
       display: flex;
+      justify-content: center;
       width: 100%;
       flex-wrap: no-wrap;
-      border: 1px solid #ddd;
       border-radius: 6px;
-      background-color: white;
+      background-color: transparent;
   }
 
-    .search > * {
-      flex: 1 1 0;
-    }
-
-    .search > input {
+    .search input {
         background-color: white;
         width: auto;
         border: none;
@@ -80,12 +101,34 @@
     }
 
     button.search-button {
+        border: none;
         text-align: center;
         border-radius: 4px;
-        max-width: 120px;
+        margin: 0 0 0 10px;
+        padding: 10px 20px;
     }
 
+    /* ---------------------------------------------------
+    Ads Page STYLE
+    ----------------------------------------------------- */
+
+    .ResultsPage.nav-search {
+      bottom: 0;
+      width: 70%;
+      margin-right: auto;
+      margin-left: auto;
+      padding-top: 20px;
+      padding-bottom: 30px;
+      background-color: blue;
+    }
+
+
+
 }
+
+/* ---------------------------------------------------
+Large Screens STYLE
+----------------------------------------------------- */
 
 @media screen and (min-width: 1000px) {
   form.nav-search {
